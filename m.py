@@ -5,6 +5,7 @@ import json
 import random
 name = 'm'
 alphabets = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
+alphabets1 = ['f', 'e', 'd', 'c', 'b', 'a', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0']
 
 alphabets2 = ['a', '1', 'b', '2', 'c', '0','d', '6', 'e', '7', 'f', '3', '4', '5', '8', '9']
 
@@ -21,7 +22,7 @@ numbers = ["46","47","48","50","51","52","54","56","58","59",
 
 suffix = ""
 flag=0
-for alpha2 in alphabets:
+for alpha2 in alphabets1:
 	for alpha3 in alphabets:
 		for alpha4 in alphabets:
 			for alpha5 in alphabets:
@@ -36,7 +37,7 @@ for alpha2 in alphabets:
 						if count_1==random_number_2:
 							continue
 						suffix = name+alpha2+alpha3+alpha4+alpha5+alpha6+number7
-						compare = name + "0000046"
+						compare = name + "000d385"
 						if(suffix==compare):
 							flag=1
 						if flag==1:
