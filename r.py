@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from lxml import etree
 import json
+import random
 name = 'r'
 alphabets = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
 
@@ -25,14 +26,14 @@ for alpha2 in alphabets:
 		for alpha4 in alphabets:
 			for alpha5 in alphabets:
 				count_2 = 0
-				
+				random_number_1 = random.randint(3,5)
 				for alpha6 in alphabets2:
-					if count_2==7:
+					if count_2==random_number_1:
 						continue
 					count_1 = 0
-					
+					random_number_2 = random.randint(1,2)	
 					for number7 in numbers:
-						if count_1==2:
+						if count_1==random_number_2:
 							continue
 						suffix = name+alpha2+alpha3+alpha4+alpha5+alpha6+number7
 						compare = name + "0000046"
