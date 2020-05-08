@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from lxml import etree
 import json
 name = 'z'
-alphabets = ['a', 'b', 'c', 'd', 'e', 'f', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+alphabets = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
 
 alphabets2 = ['a', '1', 'b', '2', 'c', '0','d', '6', 'e', '7', 'f', '3', '4', '5', '8', '9']
 
@@ -35,7 +35,7 @@ for alpha2 in alphabets:
 						if count_1==2:
 							continue
 						suffix = name+alpha2+alpha3+alpha4+alpha5+alpha6+number7
-						compare = name + "aaaaa46"
+						compare = name + "0000046"
 						if(suffix==compare):
 							flag=1
 						if flag==1:
